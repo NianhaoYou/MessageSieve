@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "messagesieve"
+version = "1.0.0"
+description = "Runtime message pruning for fixed-graph LLM multi-agent systems"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.27,<1",
+  "openai>=1.40,<3",
+  "PyYAML>=6.0.1,<7",
+  "regex>=2024.5.15",
+  "sympy>=1.12,<2",
+  "tenacity>=8.2.3,<10",
+  "datasets>=3,<5",
+  "pyarrow>=17,<24",
+]
+
+[project.scripts]
+messagesieve-run = "masbench.eval.run:main"
+
+[tool.setuptools.packages.find]
+include = ["masbench*"]

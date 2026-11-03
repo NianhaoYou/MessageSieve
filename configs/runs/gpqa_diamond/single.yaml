@@ -1,0 +1,9 @@
+_base: messagesieve.yaml
+name: qwen3_8b_gpqa_diamond_single
+method: single
+method_params: {}
+runtime:
+  num_rounds_override: 1
+  contract:
+    expected_worker_count: 1
+    expected_judge_enabled: false

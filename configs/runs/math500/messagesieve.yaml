@@ -1,0 +1,27 @@
+_base: ../../qwen3_8b.yaml
+name: qwen3_8b_math500_messagesieve
+method: messagesieve
+method_params:
+  dataset_id: math
+  task_family: math
+  base_graph_variant: full
+dataset:
+  dataset_id: math
+  path: data/math500/test.jsonl
+  split: test
+  start_index: 0
+  limit: 500
+runtime:
+  output_dir: outputs/qwen3_8b/math500
+  save_predictions: true
+  save_trajectories: true
+  write_progress: true
+  progress_every: 1
+  parallel_samples: 10
+  num_rounds_override: 2
+  skip_failed_samples: false
+  contract:
+    expected_worker_count: 4
+    expected_judge_enabled: true
+    task_metadata:
+      prompt_protocol: mas

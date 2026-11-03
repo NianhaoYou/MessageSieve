@@ -1,0 +1,39 @@
+{
+  "gpqa_diamond": {
+    "dataset_id": "gpqa_diamond",
+    "source": "Idavidrein/gpqa",
+    "config": "gpqa_diamond",
+    "split": "train",
+    "limit": 158,
+    "path": "data/gpqa_diamond/test.jsonl"
+  },
+  "aqua_rat": {
+    "dataset_id": "aqua",
+    "source": "deepmind/aqua_rat",
+    "config": "raw",
+    "split": "test",
+    "limit": 254,
+    "path": "data/aqua_rat/test.jsonl"
+  },
+  "math500": {
+    "dataset_id": "math",
+    "source": "HuggingFaceH4/MATH-500",
+    "split": "test",
+    "limit": 500,
+    "path": "data/math500/test.jsonl"
+  },
+  "livecodebench": {
+    "dataset_id": "livecodebench_codegen_lite",
+    "source": "livecodebench/code_generation_lite",
+    "file": "test6.jsonl",
+    "limit": 175,
+    "path": "data/livecodebench_codegen_lite/test.jsonl"
+  },
+  "mbppplus": {
+    "dataset_id": "mbppplus",
+    "source": "evalplus/mbppplus",
+    "split": "test",
+    "limit": 338,
+    "path": "data/mbppplus/test.jsonl"
+  }
+}

@@ -1,0 +1,8 @@
+httpx>=0.27,<1
+openai>=1.40,<3
+PyYAML>=6.0.1,<7
+tenacity>=8.2.3,<10
+regex>=2024.5.15
+sympy>=1.12,<2
+datasets>=3,<5
+pyarrow>=17,<24

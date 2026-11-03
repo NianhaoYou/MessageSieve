@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the MessageSieve paper."
+title: "MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication"
+type: software
+version: 1.0.0
+authors:
+  - given-names: Nianhao
+    family-names: You
+  - given-names: Yubo
+    family-names: Dong
+  - given-names: Jun
+    family-names: Wang
+  - given-names: Hehe
+    family-names: Fan
+  - given-names: Yi
+    family-names: Yang
+repository-code: "https://github.com/NianhaoYou/MessageSieve"
+preferred-citation:
+  type: conference-paper
+  title: "MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication"
+  authors:
+    - given-names: Nianhao
+      family-names: You
+    - given-names: Yubo
+      family-names: Dong
+    - given-names: Jun
+      family-names: Wang
+    - given-names: Hehe
+      family-names: Fan
+    - given-names: Yi
+      family-names: Yang
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  year: 2026
+  month: 10
+  pages: "49544--49566"
+  publisher:
+    name: Association for Computational Linguistics
+  url: "https://aclanthology.org/2026.emnlp-main.2179/"

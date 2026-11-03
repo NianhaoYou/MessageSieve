@@ -1,0 +1,27 @@
+_base: ../../qwen3_8b.yaml
+name: qwen3_8b_mbppplus_messagesieve
+method: messagesieve
+method_params:
+  dataset_id: mbppplus
+  task_family: code
+  base_graph_variant: full
+dataset:
+  dataset_id: mbppplus
+  path: data/mbppplus/test.jsonl
+  split: test
+  start_index: 0
+  limit: 338
+runtime:
+  output_dir: outputs/qwen3_8b/mbppplus
+  save_predictions: true
+  save_trajectories: true
+  write_progress: true
+  progress_every: 1
+  parallel_samples: 10
+  num_rounds_override: 2
+  skip_failed_samples: false
+  contract:
+    expected_worker_count: 5
+    expected_judge_enabled: true
+    task_metadata:
+      prompt_protocol: mas

@@ -1,0 +1,9 @@
+_base: messagesieve.yaml
+name: qwen3_8b_math500_full_mas
+method: full_connected_mas
+method_params: {}
+runtime:
+  num_rounds_override: 2
+  contract:
+    expected_worker_count: 4
+    expected_judge_enabled: true
